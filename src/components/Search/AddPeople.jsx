@@ -27,6 +27,11 @@ const AddPeople = () => {
         }
     }
 
+    // added features keydown
+    const handleKeydown = (event) => {
+        event.key === 'Enter' ? handleClick() : ''
+    }
+
 console.log(peoples)
   return (
     <div>
@@ -35,10 +40,11 @@ console.log(peoples)
             value={name}
             placeholder='Add Person'
             onChange={(e) => setName(e.target.value)}
+            onKeyDown={handleKeydown}
             className='border-2 mt-8 ml-4 px-4'
         />
         <button 
-            onClick={handleClick}
+            onClick={(event) => {handleClick(event)}}
             className='bg-green-300 ml-2 px-4 py-1 rounded'
         >Add</button>
         <p className='ml-4'><small>{result}</small></p>
