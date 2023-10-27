@@ -6,6 +6,7 @@ import AddPeople from './components/Search/AddPeople'
 import List from './components/Search/List'
 import Rootlayout from './shared/component/Layout/Rootlayout'
 
+
 function App() {
 
   return (
@@ -15,13 +16,16 @@ function App() {
     //   <Route path='/register' element={<Register />}/>
     //   <Route path='/home' element={<Home />}/>
     // </Routes>
-    <Routes>
-      <Route element={<Rootlayout />}>
-        <Route index element={<AddPeople />}/>
-        <Route path='/add' element={<AddPeople />}/>
-        <Route path='/list' element={<List />}/>
-      </Route>
-    </Routes>
+
+    // <Routes>
+    //   <Route element={<Rootlayout />}>
+    //     <Route index element={<AddPeople />}/>
+    //     <Route path='/add' element={<AddPeople />}/>
+    //     <Route path='/list' element={<List />}/>
+    //   </Route>
+    // </Routes>
+    <>app
+    </>
   )
 }
 
